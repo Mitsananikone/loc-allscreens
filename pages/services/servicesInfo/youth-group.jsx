@@ -33,11 +33,6 @@ function YouthGroup({ onClose }) { // Accept onClose prop
   ];
 
 
-
-  );
-
-
-
   const styles = {
     centerContainer: {
       display: "flex",
