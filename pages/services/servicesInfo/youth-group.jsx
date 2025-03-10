@@ -33,44 +33,13 @@ function YouthGroup({ onClose }) { // Accept onClose prop
     "/images/youth-group-7.jpg",
   ];
 
-  // Custom arrow components
-  const CustomPrevArrow = (props) => (
-    <div
-      {...props}
-      style={{
-        ...props.style,
-        position: "absolute",
-        left: "10px",
-        zIndex: 1,
-        cursor: "pointer",
-        fontSize: "2rem",
-        color: "white",
-      }}
-    >
-      &#10094; {/* Left arrow symbol */}
-    </div>
-  );
 
-  const CustomNextArrow = (props) => (
-    <div
-      {...props}
-      style={{
-        ...props.style,
-        position: "absolute",
-        right: "10px",
-        zIndex: 1,
-        cursor: "pointer",
-        fontSize: "2rem",
-        color: "white",
-      }}
-    >
+ 
       &#10095; {/* Right arrow symbol */}
     </div>
   );
 
-  // Update carousel settings to use custom arrows
-  carouselSettings.prevArrow = <CustomPrevArrow />;
-  carouselSettings.nextArrow = <CustomNextArrow />;
+
 
   const styles = {
     centerContainer: {
@@ -93,7 +62,7 @@ function YouthGroup({ onClose }) { // Accept onClose prop
     carouselContainer: {
       width: "100%",
       maxWidth: "800px", // Adjust the max width as needed
-      height: "65%", // Set a fixed height for the carousel container
+      height: "auto", // Set a fixed height for the carousel container
       marginBottom: "20px",
       borderRadius: "10px",
       overflow: "hidden",
