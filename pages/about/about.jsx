@@ -43,10 +43,12 @@ const styles = {
   parallelogramWrapper: {
     position: "relative",
     zIndex: 1,
-    width: "150%",
+    width: "100%",
     marginBottom: "-5vh", // Space between the two parallelograms
-    display: "flex",
-    justifyContent: "center", // Center the parallelogram horizontally
+    display: 'flex',
+  justifyContent: 'center', /* Center horizontally */
+  alignItems: 'center', /* Center vertically */
+  height: '50vh'
   },
   parallelogramContent: {
     position: "relative",
@@ -99,7 +101,7 @@ function About() {
           <Parallelogram
             width="500px" // Width of the parallelogram
             height="420px" // Height of the parallelogram
-            top="-3vh"
+            top="-5vh"
             backImage="url('/images/Kintsugi.png')"
             zIndex="2"
           >

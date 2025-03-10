@@ -17,7 +17,7 @@ function YouthGroup({ onClose }) { // Accept onClose prop
     slidesToShow: 1, // Number of slides to show at once
     slidesToScroll: 1, // Number of slides to scroll
     autoplay: true, // Auto-play the carousel
-    autoplaySpeed: 3000, // Auto-play speed in milliseconds
+    autoplaySpeed: 5000, // Auto-play speed in milliseconds
     beforeChange: (current, next) => setCurrentSlide(next), // Update current slide
   };
 
@@ -110,20 +110,20 @@ function YouthGroup({ onClose }) { // Accept onClose prop
     textAlign: "left",
     padding: "0 10px", // Reduced padding to bring text closer to the edges
   },
-  backButton: {
-    marginTop: "20px",
-    padding: "10px 20px",
-    fontSize: "1rem",
-    color: "white",
-    backgroundColor: "var(--primary-color)",
-    border: "none",
-    borderRadius: "5px",
-    cursor: "pointer",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
-    ":hover": {
-      backgroundColor: "var(--secondary-color)",
-    },
-  },
+  // backButton: {
+  //   marginTop: "20px",
+  //   padding: "10px 20px",
+  //   fontSize: "1rem",
+  //   color: "white",
+  //   backgroundColor: "var(--primary-color)",
+  //   border: "none",
+  //   borderRadius: "5px",
+  //   cursor: "pointer",
+  //   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
+  //   ":hover": {
+  //     backgroundColor: "var(--secondary-color)",
+  //   },
+  // },
 };
 
   // Function to handle the back button click
