@@ -83,7 +83,7 @@ function About() {
             width="500px" // Width of the parallelogram
             height="300px" // Height of the parallelogram
             color="var(--secondary-color)"
-            top="0"
+            top="-2vh"
             zIndex="-2"
           >
             <div style={styles.parallelogramContent}>
