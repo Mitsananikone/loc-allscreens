@@ -18,7 +18,6 @@ function YouthGroup({ onClose }) { // Accept onClose prop
     slidesToScroll: 1, // Number of slides to scroll
     autoplay: true, // Auto-play the carousel
     autoplaySpeed: 3000, // Auto-play speed in milliseconds
-    arrows: true, // Show navigation arrows
     beforeChange: (current, next) => setCurrentSlide(next), // Update current slide
   };
 
@@ -34,8 +33,6 @@ function YouthGroup({ onClose }) { // Accept onClose prop
   ];
 
 
- 
-      &#10095; {/* Right arrow symbol */}
     </div>
   );
 
