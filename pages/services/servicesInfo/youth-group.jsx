@@ -62,8 +62,8 @@ function YouthGroup({ onClose }) { // Accept onClose prop
       position: "relative",
     },
     carouselImage: {
-      width: "100%",
-      height: "100%", // Ensure the image fills the container height
+      width: "110%",
+      height: "110%", // Ensure the image fills the container height
       objectFit: "cover", // Ensure the image covers the container without distortion
       margin: 0, // Ensure no margin
       padding: 0, // Ensure no padding
