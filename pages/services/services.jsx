@@ -17,7 +17,6 @@ function Services() {
       padding: "20px",
       overflow: "visible",
       maxWidth: "100vw",
-      border: '1px solid red',
     },
     title: {
       fontSize: "1.5rem",
