@@ -101,7 +101,7 @@ function About() {
           <Parallelogram
             width="500px" // Width of the parallelogram
             height="420px" // Height of the parallelogram
-            top="-3vh"
+            top="-1vh"
             backImage="url('/images/Kintsugi.png')"
             zIndex="2"
           >
