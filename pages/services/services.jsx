@@ -100,7 +100,7 @@ function Services() {
     },
     closeButton: {
       position: "absolute",
-      top: "-50px",
+      top: "-30px",
       right: "0px",
       background: "none",
       border: "none",
