@@ -140,7 +140,7 @@ img {
   }
 
   body {
-      background-color: white;
+    background-color: white;
     color: var(--primary-color);
   }
 }
