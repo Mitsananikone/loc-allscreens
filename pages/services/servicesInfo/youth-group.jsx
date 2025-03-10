@@ -82,7 +82,7 @@ function YouthGroup() {
       padding: "20px",
       overflow: "visible",
       maxWidth: "100vw",
-      marginTop: "8vh",
+      marginTop: "2vh", // Reduced from 8vh to 2vh
     },
     title: {
       fontSize: "1.5rem",
@@ -199,19 +199,14 @@ function YouthGroup() {
 
       {/* Description */}
       <div style={styles.description}>
-        <p>
-        Our Youth Group is a fun, vibrant community where teens from around Alvin ISD can grow in their
-        faith, build lasting friendships, and have fun! The first half is social time -everyone catches up with one another, dinner is provided, and our young people love to play organized games.
+        <p><br/>
+          Our Youth Group is a fun, vibrant community where teens from around Alvin ISD can grow in their
+          faith, build lasting friendships, and have fun! The first half is social time - everyone catches up with one another, dinner is provided, and our young people love to play organized games.
         </p>
         <p>
-        The second half is Bible study, which concentrates on issues import to Christian teens, and there is lots of open discussion.
+          The second half is Bible study, which concentrates on issues important to Christian teens, and there is lots of open discussion.
         </p>
       </div>
-
-      {/* Back Button */}
-      <button style={styles.backButton} onClick={handleBackClick}>
-        BACK
-      </button>
     </div>
   );
 }
