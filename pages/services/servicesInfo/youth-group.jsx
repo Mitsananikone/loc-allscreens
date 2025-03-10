@@ -80,7 +80,7 @@ function YouthGroup() {
       alignItems: "center",
       backgroundColor: "var(--foreground-color)",
       padding: "20px",
-      overflow: "visible",
+      overflow: "hidden", // Prevent horizontal scrolling
       maxWidth: "100vw",
       marginTop: "2vh", // Reduced from 8vh to 2vh
     },
@@ -107,18 +107,29 @@ function YouthGroup() {
     thumbnailContainer: {
       display: "flex",
       justifyContent: "center",
+      flexWrap: "wrap", // Allow thumbnails to wrap to the next line
       gap: "10px",
       marginTop: "10px",
+      maxWidth: "100%", // Ensure thumbnails don't overflow
+      padding: "0 10px", // Add padding to prevent overflow
     },
     thumbnail: {
-      width: "60px",
-      height: "60px",
+      width: "60px", // Default size
+      height: "60px", // Default size
       borderRadius: "5px",
       cursor: "pointer",
       border: "2px solid transparent",
       objectFit: "cover",
       opacity: 0.7,
       transition: "opacity 0.3s ease, border-color 0.3s ease",
+      "@media (max-width: 768px)": {
+        width: "50px", // Smaller size for medium screens
+        height: "50px",
+      },
+      "@media (max-width: 480px)": {
+        width: "40px", // Even smaller size for small screens
+        height: "40px",
+      },
     },
     activeThumbnail: {
       opacity: 1,
