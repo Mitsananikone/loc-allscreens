@@ -93,7 +93,7 @@ function YouthGroup({ onClose }) { // Accept onClose prop
     carouselContainer: {
       width: "100%",
       maxWidth: "800px", // Adjust the max width as needed
-      height: "80%", // Set a fixed height for the carousel container
+      height: "75%", // Set a fixed height for the carousel container
       marginBottom: "20px",
       borderRadius: "10px",
       overflow: "hidden",
