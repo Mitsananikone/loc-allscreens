@@ -34,96 +34,97 @@ function YouthGroup({ onClose }) { // Accept onClose prop
 
 
   const styles = {
-    centerContainer: {
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      backgroundColor: "var(--foreground-color)",
-      padding: "10px",
-      overflow: "hidden", // Prevent horizontal scrolling
-      maxWidth: "100vw",
-      marginTop: "2vh", // Reduced from 8vh to 2vh
+  centerContainer: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "var(--foreground-color)",
+    padding: "10px",
+    overflow: "hidden", // Prevent horizontal scrolling
+    maxWidth: "100vw",
+    marginTop: "2vh", // Reduced from 8vh to 2vh
+  },
+  title: {
+    fontSize: "1.5rem",
+    color: "var(--primary-color)",
+    textAlign: "center",
+    marginBottom: "20px",
+  },
+  carouselContainer: {
+    width: "100%",
+    maxWidth: "800px", // Adjust the max width as needed
+    aspectRatio: "16 / 9", // Set aspect ratio (e.g., 16:9 for widescreen)
+    marginBottom: "20px",
+    borderRadius: "10px",
+    overflow: "hidden",
+    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
+    position: "relative",
+  },
+  carouselImage: {
+    width: "100%",
+    height: "100%", // Ensure the image fills the container height
+    objectFit: "cover", // Ensure the image covers the container without distortion
+    margin: 0, // Ensure no margin
+    padding: 0, // Ensure no padding
+    boxSizing: "border-box", // Include padding and border in the element's total width and height
+    border: "1px solid var(--primary-color)",
+  },
+  thumbnailContainer: {
+    display: "flex",
+    justifyContent: "center",
+    flexWrap: "wrap", // Allow thumbnails to wrap to the next line
+    gap: "10px",
+    marginTop: "10px",
+    maxWidth: "100%", // Ensure thumbnails don't overflow
+    padding: "0 10px", // Add padding to prevent overflow
+  },
+  thumbnail: {
+    width: "60px", // Default size
+    height: "60px", // Default size
+    borderRadius: "5px",
+    cursor: "pointer",
+    borderWidth: "2px", // Use non-shorthand properties
+    borderStyle: "solid",
+    borderColor: "transparent",
+    objectFit: "cover",
+    opacity: 0.5,
+    transition: "opacity 0.3s ease, border-color 0.3s ease",
+    "@media (max-width: 768px)": {
+      width: "50px", // Smaller size for medium screens
+      height: "50px",
     },
-    title: {
-      fontSize: "1.5rem",
-      color: "var(--primary-color)",
-      textAlign: "center",
-      marginBottom: "20px",
+    "@media (max-width: 480px)": {
+      width: "40px", // Even smaller size for small screens
+      height: "40px",
     },
-    carouselContainer: {
-      width: "100%",
-      maxWidth: "800px", // Adjust the max width as needed
-      height: "60%", // Set a fixed height for the carousel container
-      marginBottom: "20px",
-      borderRadius: "10px",
-      overflow: "hidden",
-      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
-      position: "relative",
+  },
+  activeThumbnail: {
+    opacity: 1,
+    borderColor: "var(--primary-color)", // Only update borderColor
+  },
+  description: {
+    fontSize: "1rem",
+    lineHeight: "1.6",
+    color: "var(--primary-color)",
+    textAlign: "left",
+    padding: "0 10px", // Reduced padding to bring text closer to the edges
+  },
+  backButton: {
+    marginTop: "20px",
+    padding: "10px 20px",
+    fontSize: "1rem",
+    color: "white",
+    backgroundColor: "var(--primary-color)",
+    border: "none",
+    borderRadius: "5px",
+    cursor: "pointer",
+    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
+    ":hover": {
+      backgroundColor: "var(--secondary-color)",
     },
-    carouselImage: {
-      width: "110%",
-      height: "110%", // Ensure the image fills the container height
-      objectFit: "cover", // Ensure the image covers the container without distortion
-      margin: 0, // Ensure no margin
-      padding: 0, // Ensure no padding
-      boxSizing: "border-box", // Include padding and border in the element's total width and height
-    },
-    thumbnailContainer: {
-      display: "flex",
-      justifyContent: "center",
-      flexWrap: "wrap", // Allow thumbnails to wrap to the next line
-      gap: "10px",
-      marginTop: "10px",
-      maxWidth: "100%", // Ensure thumbnails don't overflow
-      padding: "0 10px", // Add padding to prevent overflow
-    },
-    thumbnail: {
-      width: "60px", // Default size
-      height: "60px", // Default size
-      borderRadius: "5px",
-      cursor: "pointer",
-      borderWidth: "2px", // Use non-shorthand properties
-      borderStyle: "solid",
-      borderColor: "transparent",
-      objectFit: "cover",
-      opacity: 0.7,
-      transition: "opacity 0.3s ease, border-color 0.3s ease",
-      "@media (max-width: 768px)": {
-        width: "50px", // Smaller size for medium screens
-        height: "50px",
-      },
-      "@media (max-width: 480px)": {
-        width: "40px", // Even smaller size for small screens
-        height: "40px",
-      },
-    },
-    activeThumbnail: {
-      opacity: 1,
-      borderColor: "var(--primary-color)", // Only update borderColor
-    },
-    description: {
-      fontSize: "1rem",
-      lineHeight: "1.6",
-      color: "var(--primary-color)",
-      textAlign: "left",
-      padding: "0 10px", // Reduced padding to bring text closer to the edges
-    },
-    backButton: {
-      marginTop: "20px",
-      padding: "10px 20px",
-      fontSize: "1rem",
-      color: "white",
-      backgroundColor: "var(--primary-color)",
-      border: "none",
-      borderRadius: "5px",
-      cursor: "pointer",
-      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
-      ":hover": {
-        backgroundColor: "var(--secondary-color)",
-      },
-    },
-  };
+  },
+};
 
   // Function to handle the back button click
   const handleBackClick = () => {
