@@ -40,7 +40,7 @@ function YouthGroup({ onClose }) { // Accept onClose prop
       justifyContent: "center",
       alignItems: "center",
       backgroundColor: "var(--foreground-color)",
-      padding: "20px",
+      padding: "10px",
       overflow: "hidden", // Prevent horizontal scrolling
       maxWidth: "100vw",
       marginTop: "2vh", // Reduced from 8vh to 2vh
@@ -54,7 +54,7 @@ function YouthGroup({ onClose }) { // Accept onClose prop
     carouselContainer: {
       width: "100%",
       maxWidth: "800px", // Adjust the max width as needed
-      height: "auto", // Set a fixed height for the carousel container
+      height: "80%", // Set a fixed height for the carousel container
       marginBottom: "20px",
       borderRadius: "10px",
       overflow: "hidden",
