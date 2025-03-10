@@ -12,11 +12,12 @@ function Services() {
       display: "flex",
       justifyContent: "center",
       alignItems: "flex-start",
-      height: "auto",
+      height: "90%",
       backgroundColor: "var(--background-color)",
       padding: "20px",
       overflow: "visible",
       maxWidth: "100vw",
+      border: '1px solid red',
     },
     title: {
       fontSize: "1.5rem",
@@ -58,6 +59,7 @@ function Services() {
       fontSize: "1.2rem",
       fontWeight: "bold",
       textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+     
       
     },
     glareEffect: {
@@ -81,6 +83,7 @@ function Services() {
       justifyContent: "center",
       alignItems: "center",
       zIndex: 1000,
+      
     },
     popupContent: {
       backgroundColor: "var(--foreground-color)",
@@ -91,7 +94,7 @@ function Services() {
       width: "500px",
       boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
       position: "relative",
-      maxHeight: "90vh",
+      maxHeight: "80vh",
       overflowY: "auto",
       height: "90vh",
     },
