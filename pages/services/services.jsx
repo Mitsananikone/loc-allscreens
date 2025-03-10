@@ -96,11 +96,11 @@ function Services() {
     },
     closeButton: {
       position: "absolute",
-      top: "10px",
+      top: "0px",
       right: "10px",
       background: "none",
       border: "none",
-      fontSize: "1.5rem",
+      fontSize: "6rem",
       cursor: "pointer",
       color: "var(--primary-color)",
     },
@@ -192,9 +192,7 @@ function Services() {
               </>
             )}
           </div>
-          <button style={styles.bottomCloseButton} onClick={closePopup}>
-            CLOSE
-          </button>
+          
         </div>
       )}
     </div>
