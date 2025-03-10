@@ -43,7 +43,7 @@ const styles = {
   parallelogramWrapper: {
     position: "relative",
     zIndex: 1,
-    width: "100%",
+    width: "auto",
     marginBottom: "-5vh", // Space between the two parallelograms
     display: 'flex',
   justifyContent: 'center', /* Center horizontally */
