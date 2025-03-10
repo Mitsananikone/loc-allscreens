@@ -33,7 +33,7 @@ function YouthGroup({ onClose }) { // Accept onClose prop
   ];
 
 
-    </div>
+
   );
 
 
